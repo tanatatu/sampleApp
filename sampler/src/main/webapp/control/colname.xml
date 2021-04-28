@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dqube>
+	<alerts id="trap_id">
+		<name>トラップID</name>
+		<queryname>traps.trap_id</queryname>
+		<classname>alerts_trap_id</classname>
+	</alerts>
+	<alerts id="date_time">
+		<name>発生時刻</name>
+		<queryname>traps.date_time</queryname>
+		<classname>alerts_date_time</classname>
+		<mode>time</mode>
+	</alerts>
+	<alerts id="address">
+		<name>アドレス</name>
+		<queryname>traps.address</queryname>
+		<classname>alerts_address</classname>
+		<select>true</select>
+	</alerts>
+	<alerts id="oid">
+		<name>OID</name>
+		<queryname>traps.oid</queryname>
+		<classname>alerts_oid</classname>
+	</alerts>
+	<alerts id="text">
+		<name>トラップメッセージ</name>
+		<queryname>traps.text</queryname>
+		<classname>alerts_text</classname>
+	</alerts>
+	<alerts id="name">
+		<name>マシン名</name>
+		<queryname>cachepcs.name</queryname>
+		<classname>alerts_name</classname>
+	</alerts>
+</dqube>

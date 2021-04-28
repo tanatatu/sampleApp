@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dqube>
+	<SYSTEMCTL id="0">
+		<syslog>c:\\log\\ebase6system.log</syslog>
+		<loglevel>TRACE</loglevel>
+		<db-jndi>java:comp/env/jdbc/ebase</db-jndi>
+		<xml-init>control/init.xml:init</xml-init>
+	</SYSTEMCTL>
+</dqube>

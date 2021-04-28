@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dqube>
+	<init id="0">
+		<sql>drop table accounts</sql>
+		<skip>true</skip>
+		<description>Drop : Account Table</description>
+	</init>
+	<init id="1">
+		<sql>create table accounts (
+ accountid varchar(16) not null,
+ name_global varchar(40) not null,
+ name_locale varchar(40) not null,
+ mailaddr varchar(64) not null,
+ signinid varchar(16) not null,
+ signinpw varchar(64) not null,
+ pwupdate date,
+ createdate  date,
+ expired boolean,
+ admin boolean,
+ description varchar(256) not null default '',
+ primary key (accountid) )</sql>
+		<skip>false</skip>
+		<description>Create : Account Table</description>
+	</init>
+	<init id="2">
+		<sql>insert into accounts (
+'0000000000000000',
+'Administrator',
+'Administrator',
+'ebase@1excellence.com'.
+'admin','excel',CURDATE(),
+CURDATE(),
+false,true,'Administrator'
+ )</sql>
+		<skip>false</skip>
+		<description>Create : Administrator Create</description>
+	</init>
+</dqube>

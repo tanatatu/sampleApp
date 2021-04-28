@@ -1,0 +1,178 @@
+
+/* ------------ Font Style */
+body, a, table, td, th, div, pre, form, fieldset, dl, dt, dd, ul, ol, li, h1, h2, h2, h3, h5, h6, textarea, p, blockquote, input ,select  {
+    font-family: "メイリオ",Meiryo,verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+}
+
+/* A Style */
+/* 未訪問リンクの色をblueにする。*/
+a:link { text-decoration: underline; color: blue; }
+
+/* 訪問済みリンクの色を薄い青にする。*/
+a:visited { text-decoration: underline; color: #6666FF; }
+
+/* マウスカーソルを乗せたリンクの色をblueにする */
+a:hover { text-decoration: underline; color: blue ; }
+
+/* 選択リンクの色を濃い青にする */
+a:active { text-decoration: underline; color: #333399; }
+
+/* メインメニュー */
+#ebase6_mainmenu {
+	background-color :#ff0000;
+	font-size : 32px;
+}
+
+/* サブメニュー */
+#ebase6_submenu {
+	background-color :#a5a5a5;
+	font-size : 32px;
+	text-align : center;
+}
+
+/* サブメニューリスト*/
+#table_item {
+   table-layout: fixed;     /* 固定レイアウト */
+   border-collapse: collapse; /* 隣接する枠線を重ねる */
+   border: 2px solid green;   /* 外枠：2px,実線,緑色 */
+   width: 400%;             /* 表の横幅：350ピクセル */
+   height : 60px;
+   text-align : center;
+}
+table td {
+   border: 1px solid green; /* 表内側の線：1px,実線,緑色 */
+   padding: 3px;            /* セル内側の余白：3ピクセル */
+}
+
+/* ボタン */
+#new {
+	font-size: 1.4em;
+	padding: 10px 30px;
+	background-color: #FFCCFF;
+}
+
+
+/* コントロールメニュー */
+#ebase6_controlmenu {
+	background-color : #FFF;/*#a5a5a5*/
+	position : fixed;
+	bottom : 0;
+	width : 100%;
+	height : 100px;
+}
+
+/* メニュー背景 */
+#ebase6_menulist {
+	background-color : #a5a5a5;
+	position : fixed;
+	bottom : 120px;
+    left : 20px;
+	width : 300px;
+	height : 300px;
+	display : none;
+	filter:alpha(opacity=80);
+	-moz-opacity: 0.80;
+	-khtml-opacity: 0.80;
+	opacity: 0.80;
+}
+
+/* メニュータイトル */
+#ebase6_menulist_title {
+	background-color : #bfbfff;
+	color : #000000;
+	text-align : center;
+	position : fixed;
+	bottom : 420px;
+	left : 20px;
+	width : 300px;
+	height : 30px;
+	font-size :24px;
+	filter:alpha(opacity=80);
+	-moz-opacity: 0.80;
+	-khtml-opacity: 0.80;
+	opacity: 0.80;
+}
+
+/* メニューリストのCLOSEボタン */
+#ebase6_menulist_close {
+	width : 300px;
+	height: 30px;
+	text-align :center;
+	vertical-align: middle;
+	background-color: #c0c0c0;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+/* ボディ部 */
+#ebase6_body {
+	position : fixed;
+	top : 100px;
+	left : 0;
+	bottom : 100px;
+	width : 100%;
+	overflow : auto;
+}
+
+/* パラメータの表示部分 */
+.ebase6_pamview {
+	background-color : #8080c0;
+	color : #ffffff;
+	width : 100%;
+}
+
+/* ナビゲーションメニュー */
+#ebase6_nav {
+	width : 320px;
+	float : left;
+}
+
+/* 初期画面 */
+#ebase6_initial_body {
+	margin: -250px 0 0 -300px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 600px;
+	height: 500px;
+	background-color: #FFF;
+	color: black;
+}
+
+/* ポップアップ */
+#ebase6_popup {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	background-color : #fff;
+}
+#ebase6_popup_head {
+	background-color : #aaf;
+}
+#ebase6_popup_title {
+	display : inline;
+}	
+
+#ebase6_popup_foot {
+	position: absolute;
+	bottom : 0;
+}
+
+/* 画面フィルタ */
+#ebase6_shadow {
+	position: fixed;
+	margin: 0 0 0 0;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	height: 100%;
+	background-color: #000;
+	filter:alpha(opacity=50);
+	-moz-opacity: 0.50;
+	-khtml-opacity: 0.50;
+	opacity: 0.50;
+	display: block;
+}

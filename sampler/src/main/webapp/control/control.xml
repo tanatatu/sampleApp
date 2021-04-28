@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dqube>
+	<QUBE id="ERROR000">
+		<logic>com.excellence.dqube.base.NullLogic</logic>
+		<urls>/view/common/error.jsp</urls>
+		<loglevel>TRACE</loglevel>
+	</QUBE>
+	<QUBE id="LOGON000">
+		<logic>com.excellence.dqube.base.NullLogic</logic>
+		<urls>/view/common/top.jsp</urls>
+		<loglevel>TRACE</loglevel>
+	</QUBE>
+	<QUBE id="LOGON001">
+		<logic>com.excellence.ebase6.LogonLogic</logic>
+		<urls>/view/common/top.jsp</urls>
+		<loglevel>TRACE</loglevel>
+	</QUBE>
+
+	<QUBE id="INITILIZ">
+		<logic>com.excellence.ebase6.BLJSetup</logic>
+		<urls>JSON</urls>
+		<loglevel>TRACE</loglevel>
+		<logonignore>true</logonignore>
+	</QUBE>
+	<QUBE id="SQLEXE01">
+		<logic>com.excellence.ebase6.BLJSQLExecuter</logic>
+		<urls>JSON</urls>
+		<loglevel>TRACE</loglevel>
+		<logonignore>true</logonignore>
+	</QUBE>
+	<QUBE id="XMLEXE01">
+		<logic>com.excellence.ebase6.BLJXmlExecuter</logic>
+		<urls>JSON</urls>
+		<loglevel>TRACE</loglevel>
+		<logonignore>true</logonignore>
+	</QUBE>
+	<QUBE id="MSGGET01">
+		<logic>com.excellence.ebase6.BLJMessage</logic>
+		<urls>JSON</urls>
+		<loglevel>TRACE</loglevel>
+		<logonignore>true</logonignore>
+	</QUBE>
+	<QUBE id="ADDWORK01">
+		<logic>com.excellence.ebase6.BLJAddWorkEnya20180322</logic>
+		<urls>JSON</urls>
+		<loglevel>TRACE</loglevel>
+		<logonignore>true</logonignore>
+	</QUBE>
+	<QUBE id="InsertData">
+		<logic>com.excellence.ebase6.BLJInsertData</logic>
+		<urls>JSON</urls>
+		<loglevel>TRACE</loglevel>
+		<logonignore>true</logonignore>
+	</QUBE>
+	<QUBE id="OrderWork">
+		<logic>com.excellence.ebase6.BLJOrderWork</logic>
+		<urls>JSON</urls>
+		<loglevel>TRACE</loglevel>
+		<logonignore>true</logonignore>
+	</QUBE>
+	<QUBE id="SupplyData">
+		<logic>com.excellence.ebase6.BLJSupplyData</logic>
+		<urls>JSON</urls>
+		<loglevel>TRACE</loglevel>
+		<logonignore>true</logonignore>
+	</QUBE>
+	<QUBE id="GoodsSelect">
+		<logic>com.excellence.ebase6.BLJGoodsSelect</logic>
+		<urls>JSON</urls>
+		<loglevel>TRACE</loglevel>
+		<logonignore>true</logonignore>
+	</QUBE>
+	<QUBE id="GoodsCheck">
+		<logic>com.excellence.ebase6.BLJGoodsCheck</logic>
+		<urls>JSON</urls>
+		<loglevel>TRACE</loglevel>
+		<logonignore>true</logonignore>
+	</QUBE>
+	<QUBE id="GoodsList">
+		<logic>com.excellence.ebase6.BLJGoodsList</logic>
+		<urls>JSON</urls>
+		<loglevel>TRACE</loglevel>
+		<logonignore>true</logonignore>
+	</QUBE>
+	<QUBE id="CheckRegister">
+		<logic>com.excellence.ebase6.BLJCheckRegister</logic>
+		<urls>JSON</urls>
+		<loglevel>TRACE</loglevel>
+		<logonignore>true</logonignore>
+	</QUBE>
+	<QUBE id="OrderNumber">
+		<logic>com.excellence.ebase6.BLJOrderNumber</logic>
+		<urls>JSON</urls>
+		<loglevel>TRACE</loglevel>
+		<logonignore>true</logonignore>
+	</QUBE>
+</dqube>
